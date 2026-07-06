@@ -28,17 +28,6 @@ Welcome to my professional developer portfolio repository! This website showcase
 
 ---
 
-## 🔧 Local Development & Testing
-
-To run the site locally for testing:
-1.  Open a terminal in this directory.
-2.  Start a local server:
-    ```bash
-    python -m http.server 8000
-    ```
-3.  Open your browser and navigate to: [http://localhost:8000](http://localhost:8000)
-
----
 
 ## 🧑‍💻 Author
 
