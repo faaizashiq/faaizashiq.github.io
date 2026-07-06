@@ -165,7 +165,14 @@ const projectsData = {
         ],
         technologies: ["Flutter", "Dart", "SQLite", "sqflite", "Shared Preferences"],
         details: "Credit Keeper is a lightweight, secure Flutter mobile application designed to replace traditional paper-based ledger books (Khata). The app leverages SQLite (via sqflite) for offline local storage, ensuring user data remains private and fast. Shop custom configurations are persisted locally using shared_preferences. It provides a simple dashboard displaying net balances and total market credit, helping shopkeepers transition to a modern digital workflow.",
-        githubUrl: "https://github.com/faaizashiq/Credit-Keeper-app"
+        githubUrl: "https://github.com/faaizashiq/Credit-Keeper-app",
+        images: [
+            { src: "assets/credit_keeper/screenshot_5.png", label: "App Dashboard & Features Menu" },
+            { src: "assets/credit_keeper/screenshot_4.png", label: "My Customers list (Search & Profiles)" },
+            { src: "assets/credit_keeper/screenshot_1.png", label: "Quick Transaction (Credit & Payment Dialog)" },
+            { src: "assets/credit_keeper/screenshot_3.png", label: "Business Insights (Market Credit & Balance)" },
+            { src: "assets/credit_keeper/screenshot_2.png", label: "Shop Settings & Custom Configurations" }
+        ]
     },
     2: {
         title: "Shop POS System",
