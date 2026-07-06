@@ -1,36 +1,48 @@
-# Portfolio Website
+# 🚀 AI & Machine Learning Developer Portfolio
 
-AI & Machine Learning Developer Portfolio
+Welcome to my professional developer portfolio repository! This website showcases my projects, skills, and work experience as an AI & Machine Learning Developer.
 
-## Quick Start
+🔗 **Live Demo:** [https://faaizashiq.github.io](https://faaizashiq.github.io)
 
-### Local Development
-1. Open terminal in this directory
-2. Run: `python -m http.server 8000`
-3. Open browser: `http://localhost:8000`
+---
 
-## Deploy to Get Public Link
+## 🛠️ Tech Stack & Features
 
-### Option 1: Netlify (Easiest - 2 minutes)
-1. Go to https://app.netlify.com/drop
-2. Drag and drop this entire folder
-3. Get instant public link!
+*   **Frontend Design:** Clean, modern, responsive glassmorphism layout with smooth animations, dynamic interactive background particles (neural canvas), and dark/light modes.
+*   **AI Inference (ONNX Web):** Features real-time client-side deep learning computer vision running completely in-browser (Forest Fire Detection CNN).
+*   **Mathematical Modeling (JavaScript):** Live predictive calculator for Diabetes risk classification using standardized logistic regression coefficients running natively offline.
+*   **Responsive Forms:** Dynamic, active contact form submission powered by FormSubmit.co direct to email.
 
-### Option 2: GitHub Pages (Free)
-1. Create a GitHub repository
-2. Push these files to the repo
-3. Go to Settings > Pages
-4. Select main branch
-5. Get link: `https://yourusername.github.io/repo-name`
+---
 
-### Option 3: Vercel (Free)
-1. Install Vercel CLI: `npm i -g vercel`
-2. Run: `vercel`
-3. Follow prompts
-4. Get instant public link!
+## 📂 Key Projects Featured
 
-## Files
-- `index.html` - Main HTML file
-- `styles.css` - Styling
-- `script.js` - JavaScript functionality
+1.  **Credit Keeper App:** Mobile financial management app for tracking customer credits and ledgers.
+2.  **Shop POS System:** Offline receipt printing desktop point-of-sale app built in PyQt5/SQLite3.
+3.  **Forest Fire Detector:** Deep Learning CNN trained in PyTorch (97.27% accuracy) running live on browser CPU/GPU via ONNX Runtime Web.
+4.  **KNN Spatial Map Reconstruction:** Image processing study evaluating distance metrics on map occlusions.
+5.  **Diabetes Prediction App:** Standardized Logistic Regression classifier evaluating health parameters with real-time risk calculations.
+6.  **Android Weather App:** Milestone project introducing API integrations, parsing, and mobile coding.
+7.  **Autonomous AI Agent:** Multi-tool calling LLM workflows using LangChain.
+8.  **CodeCracker:** AI student coach startup using custom local llama.cpp servers.
 
+---
+
+## 🔧 Local Development & Testing
+
+To run the site locally for testing:
+1.  Open a terminal in this directory.
+2.  Start a local server:
+    ```bash
+    python -m http.server 8000
+    ```
+3.  Open your browser and navigate to: [http://localhost:8000](http://localhost:8000)
+
+---
+
+## 🧑‍💻 Author
+
+**Faaiz Ashiq**
+*   **GitHub:** [@faaizashiq](https://github.com/faaizashiq)
+*   **LinkedIn:** [Faaiz Ashiq](https://www.linkedin.com/in/faaiz-ashiq-989189297/)
+*   **Email:** faaizashiq72@gmail.com
