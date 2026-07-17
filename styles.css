@@ -447,30 +447,72 @@ h1, h2, h3, h4, h5, h6 {
     animation: fadeInRight 1s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Minimalist Profile Frame */
-.profile-placeholder {
+/* ── Professional Profile Photo Frame ── */
+.profile-frame {
+    position: relative;
     width: 320px;
     height: 320px;
-    border-radius: 24px;
-    background: var(--gradient-subtle);
-    border: 1px solid rgba(13, 148, 136, 0.15);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 6rem;
-    color: var(--primary-color);
-    box-shadow: var(--shadow-md);
-    position: relative;
     animation: float 6s ease-in-out infinite;
 }
 
-.profile-placeholder::before {
-    content: '';
+/* Animated gradient glow ring */
+.profile-glow-ring {
     position: absolute;
-    inset: -8px;
-    border: 1.5px dashed rgba(13, 148, 136, 0.2);
-    border-radius: 32px;
-    animation: rotateDashed 40s linear infinite;
+    inset: -5px;
+    border-radius: 50%;
+    background: conic-gradient(
+        from 0deg,
+        #0d9488,
+        #0284c7,
+        #7c3aed,
+        #0d9488
+    );
+    animation: rotateDashed 5s linear infinite;
+    z-index: 0;
+    filter: blur(1px);
+    opacity: 0.85;
+}
+
+/* Photo container clipped to circle */
+.profile-photo-wrapper {
+    position: relative;
+    width: 310px;
+    height: 310px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: var(--bg-primary);
+    z-index: 1;
+    border: 4px solid var(--bg-primary);
+    box-shadow:
+        0 0 0 1px rgba(13, 148, 136, 0.15),
+        0 20px 60px -10px rgba(13, 148, 136, 0.25),
+        0 8px 24px -4px rgba(2, 132, 199, 0.15);
+    transition: var(--transition-smooth);
+}
+
+.profile-photo-wrapper:hover {
+    box-shadow:
+        0 0 0 1px rgba(13, 148, 136, 0.3),
+        0 28px 72px -8px rgba(13, 148, 136, 0.35),
+        0 12px 32px -4px rgba(2, 132, 199, 0.2);
+    transform: translateY(-4px);
+}
+
+/* Actual photo */
+.profile-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.profile-photo-wrapper:hover .profile-photo {
+    transform: scale(1.04);
 }
 
 /* About Section */
@@ -1452,10 +1494,13 @@ h1, h2, h3, h4, h5, h6 {
     .hero .container {
         gap: 3rem;
     }
-    .profile-placeholder {
+    .profile-frame {
         width: 280px;
         height: 280px;
-        font-size: 5rem;
+    }
+    .profile-photo-wrapper {
+        width: 270px;
+        height: 270px;
     }
 }
 
@@ -1509,10 +1554,13 @@ h1, h2, h3, h4, h5, h6 {
         justify-content: center;
     }
 
-    .profile-placeholder {
+    .profile-frame {
         width: 240px;
         height: 240px;
-        font-size: 4.5rem;
+    }
+    .profile-photo-wrapper {
+        width: 232px;
+        height: 232px;
     }
 
     .about-stats {
